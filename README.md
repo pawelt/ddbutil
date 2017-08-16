@@ -21,11 +21,12 @@ Helper functions for batch operations in AWS DynamoDB with `DocumentClient` inte
         ProjectionExpression: 'Attr1, Attr2',
         KeyConditionExpression: 'Attr1 = :Attr1',
         ExpressionAttributeValues: { ':Attr1': '123' },
+        ReturnConsumedCapacity: 'TOTAL',
     };
 
     ddbutil.query(docClient, queryParams)
         .then(items => {
-            console.log('Items found:', x.length);
+            console.log('Items found:', items.length);
             return items;
         });
 ```
