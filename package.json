@@ -1,0 +1,21 @@
+{
+  "name": "ddbutil",
+  "version": "1.0.1",
+  "description": "Helper functions for batch operations in AWS DynamoDB with DocumentClient interface",
+  "main": "index.js",
+  "repository": "https://github.com/pawelt/ddbutil",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AWS",
+    "DynamoDB",
+    "DDB",
+    "batch"
+  ],
+  "author": "Pawel Turlejski",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
