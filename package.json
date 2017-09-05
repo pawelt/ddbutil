@@ -1,11 +1,11 @@
 {
   "name": "ddbutil",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Batch operations in AWS DynamoDB with DocumentClient interface",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/pawelt/ddbutil",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "AWS",
@@ -15,6 +15,11 @@
   ],
   "author": "Pawel Turlejski",
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0",
+    "sinon": "^3.2.1",
+    "sinon-chai": "^2.13.0"
   }
 }

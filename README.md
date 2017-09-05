@@ -1,8 +1,9 @@
 # DDButil
 
 Helper functions for batch operations in AWS DynamoDB with `DocumentClient` interface:
-- run `query()`/`scan()` without worrying about `ExclusiveStartKey`
-- run `batchPut()`/`batchDelete()` (which use `batchWrite()`) without worrying about `UnprocessedItems`
+- run `query`/`scan` operations without worrying about `ExclusiveStartKey`
+- run `batchPut`/`batchDelete` (which use `batchWrite` operation internally) without worrying about `UnprocessedItems`
+- utilise forwarding functions that call `.promise()` on  docClient function results, so you don't have to
 
 ## Installation
 
